@@ -25,7 +25,13 @@ For example `URL=example.com SLEEP=5 DURATION=10s INITIAL=1 INCREASE=10` means:
 * the third 21 RPS
 * between each tests give the server 5 seconds to cool down
 
-You can stop the script with `ctrl+c`. No biggie.
+You can store those variables inside a file called `conf.txt` in order to load it directly.
+
+If you create a `targets.txt` file (compatible with vegeta's [target file](https://github.com/tsenart/vegeta#attack)) it will be used instead of `URL` environment var.
+
+If you want to add a timeout you can do it like that: `timeout 10s ./quick-load-incremental.sh`
+
+You can always stop the script with `ctrl+c`. No biggie.
 
 ## License
 

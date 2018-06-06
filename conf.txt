@@ -1,0 +1,6 @@
+URL=http://google.com 
+SLEEP=5 
+DURATION=10s 
+INITIAL=1 
+INCREASE=10 
+TIMEOUT=10
